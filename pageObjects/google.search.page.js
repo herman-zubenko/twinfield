@@ -17,10 +17,8 @@ class GooglePage {
     }
 
     async getFirstLink() { //getting the first link
-        var firstLink = element(by.xpath('//cite'));
-        let text = await firstLink.getText();
-        console.log(text);
-        return text;
+        var firstLink = element(by.css('cite'));
+        return await firstLink.getText();
     }
 
     async assertLink(link){ //checking that link is as expected

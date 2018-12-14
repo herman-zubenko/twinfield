@@ -25,7 +25,6 @@ class ResultsPage {
         for (let i = 0; i< linksArray.length; i++){
 
             await browser.executeScript("return window.open(arguments[0], '_blank')", linksArray[i]);
-            console.log(linksArray[i] + ' is opened');
         }
     }
 
