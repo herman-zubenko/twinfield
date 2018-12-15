@@ -14,15 +14,17 @@ class ResultsPage {
 
     async sortLinksArray(array, word) { //sorting links which contains special word
         const sortedArray = [];
-        for (const i = 0; i < array.length;i++)
-        {
-            if (array[i].toLowerCase().includes(word)) sortedArray.push(array[i]);
-        }
+        array.forEach((link, i) => {
+            if (array[i].toLowerCase().includes(word)) {
+                sortedArray.push(array[i]);
+            }
+        });
+
         return sortedArray;
     }
 
     async followSortedLinks(linksArray) { //opening blank tab and following links
-        for (const i = 0; i< linksArray.length; i++){
+        for (let i = 0; i< linksArray.length; i++){
 
             await browser.executeScript("return window.open(arguments[0], '_blank')", linksArray[i]);
         }

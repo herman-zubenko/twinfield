@@ -17,7 +17,7 @@ class GooglePage {
     }
 
     async getFirstLink() { //getting the first link
-        var firstLink = element(by.css('cite'));
+        let firstLink = element(by.css('cite'));
         return await firstLink.getText();
     }
 
