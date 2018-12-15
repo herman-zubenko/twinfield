@@ -4,11 +4,15 @@
   "description": "",
   "main": "conf.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start-server": "webdriver-manager start",
+    "start": "protractor conf.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "chai": "^4.2.0"
+    "chai": "^4.2.0",
+    "protractor": "^5.4.1",
+    "webdriver-manager": "^12.1.0"
   }
 }
