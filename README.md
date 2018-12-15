@@ -1,10 +1,10 @@
 ### Installation
 
 requires:
- [Java SDK](https://www.oracle.com/technetwork/java/javase/downloads/index.html) v8+ to run.
- [Node.js](https://nodejs.org/) v8+ to run.
+ [Java SDK](https://www.oracle.com/technetwork/java/javase/downloads/index.html) v8+.
+ [Node.js](https://nodejs.org/) v8+.
 
-Install the dependencies and devDependencies and start the server.
+Install the dependencies and start the server.
 
 ```sh
 $ npm install
