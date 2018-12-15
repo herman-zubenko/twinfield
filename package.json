@@ -5,7 +5,7 @@
   "main": "conf.js",
   "scripts": {
     "postinstall": "webdriver-manager update",
-    "start": "webdriver-manager start",
+    "start": "webdriver-manager start --detach",
     "test": "protractor conf.js"
   },
   "author": "",
