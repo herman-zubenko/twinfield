@@ -3,6 +3,8 @@ exports.config = {
     seleniumAddress: 'http://localhost:4444/wd/hub',
     specs: [
         './testSpecs/check.first.link.spec.js',
-        './testSpecs/follow.links.spec.js'
-    ]
+        './testSpecs/follow.links.spec.js',
+        './testSpecs/follow.links.spec.by.xpath.spec.js'
+    ],
+    restartBrowserBetweenTests: true
 }

@@ -1,6 +1,18 @@
 class ResultsPage {
 
-    async getAllLinks() { //getting all links from search results
+    async getAllLinksByCss() { //getting all links from search results by css. First option for task 3
+        const linksArray = await browser.findElements(by.css('div.r > a:nth-child(1)'));
+        const newArray = [];
+        for (let i = 0; i < linksArray.length; i++)
+        {
+            const text = await linksArray[i].getAttribute('href');
+            newArray.push(text);
+        }
+
+        return newArray;
+    }
+
+    async getAllLinksByXpath() { //getting all links from search results by xpath. Second option for task 3
         const linksArray = await browser.findElements(by.xpath('//h3[@class="LC20lb"]/..'));
         const newArray = [];
         for (let i = 0; i < linksArray.length; i++)
