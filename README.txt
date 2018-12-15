@@ -1,7 +1,13 @@
-This project is a test task for Twinfield.
+### Installation
 
-Firstly you have to run the standalone server. Type "webdriver-manager start" in Command line.
+requires:
+ [Java SDK](https://www.oracle.com/technetwork/java/javase/downloads/index.html) v8+ to run.
+ [Node.js](https://nodejs.org/) v8+ to run.
 
-To run the tests, please run "protractor conf.js" in project root folder.
+Install the dependencies and devDependencies and start the server.
 
-All specs from conf.js will be runned.
+```sh
+$ npm install
+$ npm start
+$ npm test
+```
